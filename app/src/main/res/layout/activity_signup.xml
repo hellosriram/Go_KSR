@@ -12,7 +12,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:background="@drawable">
-+
+        +
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/phone"
+        android:id="@+id/name"
         android:hint="Enter your name"
         android:background="@drawable/forget"
         android:layout_marginLeft="35dp"
@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your email id"
-        android:id="@+id/otpenter"
+        android:id="@+id/emailid"
         android:background="@drawable/forget"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
@@ -89,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter new password"
-        android:id="@+id/otpenter"
+        android:id="@+id/password"
         android:background="@drawable/forget"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
@@ -99,11 +99,15 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:text="Signup"
-        android:id="@+id/verifyOTP"
+        android:id="@+id/signup"
         android:textColor="#fff"
         android:background="@drawable/button"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="35dp"/>
 
-
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 </LinearLayout>
