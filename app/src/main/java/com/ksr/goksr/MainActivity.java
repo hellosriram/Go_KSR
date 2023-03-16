@@ -6,29 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-public class login extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-    private Button loginbtn;
-    private EditText email, password;
-    private Button signupbtn;
+    private Button continuebtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
 
-        signupbtn = findViewById(R.id.signupBtn);
-        signupbtn.setOnClickListener(new View.OnClickListener() {
+        continuebtn = findViewById(R.id.continueBtn);
+        continuebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent
-                        = new Intent(login.this,
-                        signup.class);
+                        = new Intent(MainActivity.this,
+                        login.class);
                 startActivity(intent);
             }
         });
-
 
     }
 }
